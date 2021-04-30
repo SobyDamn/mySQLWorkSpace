@@ -5,7 +5,7 @@ create table Account(
  Pan_No varchar(15) NOT NULL,
  Acc_Type varchar(20) NOT NULL,
  Balance int default 0 NOT NULL,
- Phone int NOT NULL
+ Phone varchar(15) NOT NULL
 );
 
 create table Transaction(
@@ -21,7 +21,7 @@ insert into Account (Acc_No, Acc_Name, Address, Pan_No, Acc_Type, Balance, Phone
 (232213112,"Timothy Alex","Kochi","EYTBA74822","Current",57000,"9847327329"),
 (210938477,"Utkrisht Pathak","Patna","AGTBC98989","Saving",109000,"8545784578"),
 (452837467,"John Wick","Kolkata","TRYIE18889","Current",4000,"7730752189"),
-(273646718,"George Jr.","Bhubneshwar","EUYTD19837","Saving",215000,"8873687368")
+(273646718,"George Jr.","Bhubneshwar","EUYTD19837","Saving",215000,"8873687368"),
 (374728172,"Muhammad Siyad","Kochi","TREYW32456","Current",3000,"9199807824");
 
 insert into Transaction (Trans_Id, Acc_No, Trans_Date, Amount, Trans_Type) values
